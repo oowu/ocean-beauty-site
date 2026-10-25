@@ -46,10 +46,8 @@ html{scroll-behavior:smooth}
 @keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
 @keyframes slideIn{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
 .hero-in{animation:rise .9s ease both}
-@supports (animation-timeline:view()){
-.reveal,.card,.tile{animation:rise linear backwards;animation-timeline:view();animation-range:entry 0% entry 45%}
-.price-row{animation:slideIn linear backwards;animation-timeline:view();animation-range:entry 0% entry 60%}
-}
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--rd,0s)}
+.js .rv.in{opacity:1;transform:none}
 @media (max-width:1000px){.decor-edge{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
 
@@ -811,6 +809,23 @@ function upd(){tick=false; var y=window.innerHeight*0.38,act=null; secs.forEach(
 if(window.innerHeight+window.pageYOffset>=document.documentElement.scrollHeight-4)act='kontakt';
 if(act===cur)return; cur=act; links.forEach(function(a){var on=a.getAttribute('href')==='#'+act; if(on)a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current')}) }
 window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true}); window.addEventListener('resize',upd); upd();
+})();
+</script>
+<script>
+(function(){
+if(!('IntersectionObserver' in window)||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;
+var els=[];
+document.querySelectorAll('.reveal').forEach(function(r){
+ if(r.parentElement&&r.parentElement.closest('.reveal'))return;
+ var kids=r.children;
+ for(var i=0;i<kids.length;i++){var k=kids[i];k.classList.add('rv');k.style.setProperty('--rd',Math.min(i,3)*0.14+'s');els.push(k);}
+});
+if(!els.length)return;
+document.documentElement.classList.add('js');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+ if(e.isIntersecting||e.boundingClientRect.bottom<0){e.target.classList.add('in');io.unobserve(e.target);}
+});},{rootMargin:'0px 0px -10% 0px',threshold:0});
+els.forEach(function(k){io.observe(k)});
 })();
 </script>
 <script>
