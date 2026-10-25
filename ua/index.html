@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ocean Beauty — Nail World | Манікюр і педикюр, Варшава Воля</title>
+<meta name="description" content="Салон манікюру й педикюру та курси у варшавській Волі. ul. Jana Kazimierza 32 B. Запис онлайн.">
+<link rel="icon" href="../img/mark.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Nunito:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F9FC;font-family:'Nunito',system-ui,sans-serif;color:#1F3550}
+a{color:#004AAD}a:hover{color:#02357F}
+html{scroll-behavior:smooth}
+.btn{position:relative;display:inline-block;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,color .25s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,74,173,.30);background-color:#02357F !important}
+.btn:active{transform:translateY(0);box-shadow:0 4px 10px rgba(0,74,173,.25)}
+.btn-outline:hover{background-color:#004AAD !important;color:#FFFFFF !important}
+.btn-ow:hover{background-color:#FFFFFF !important;color:#004AAD !important}
+.btn-light:hover{background-color:#DCEBF5 !important;color:#02357F !important}
+.btn-shine{overflow:hidden;animation:ringPulse 3.2s ease-out infinite}
+.btn-shine::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));transform:skewX(-20deg);animation:shine 4s ease-in-out infinite}
+@keyframes shine{0%,55%{left:-70%}100%{left:130%}}
+@keyframes ringPulse{0%{box-shadow:0 0 0 0 rgba(0,74,173,.45)}70%,100%{box-shadow:0 0 0 14px rgba(0,74,173,0)}}
+.navlink{position:relative}
+.navlink::after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height:2px;background:#FF914D;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.navlink:hover::after{transform:scaleX(1)}
+.price-row{transition:transform .25s ease,background-color .25s ease;border-radius:10px}
+.price-row:hover{transform:translateX(8px);background-color:rgba(0,74,173,.07)}
+.price-row strong{display:inline-block;transition:transform .25s ease;transform-origin:right center}
+.price-row:hover strong{transform:scale(1.12)}
+.card{transition:transform .3s ease,box-shadow .3s ease}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 40px rgba(2,53,127,.22)}
+.tile{transition:transform .4s ease,box-shadow .4s ease}
+.tile:hover{transform:scale(1.03);box-shadow:0 16px 32px rgba(2,53,127,.16)}
+.float{animation:floaty 6s ease-in-out infinite}
+.decor{position:absolute;pointer-events:none;z-index:0}
+.drift{animation:floaty 8s ease-in-out infinite}
+.sway{transform-origin:50% 100%;animation:sway 7s ease-in-out infinite}
+.spin{animation:spin 60s linear infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
+.hero-in{animation:rise .9s ease both}
+@supports (animation-timeline:view()){
+.reveal,.card,.tile{animation:rise linear backwards;animation-timeline:view();animation-range:entry 0% entry 45%}
+.price-row{animation:slideIn linear backwards;animation-timeline:view();animation-range:entry 0% entry 60%}
+}
+@media (max-width:1000px){.decor-edge{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
+
+.team{justify-content:center;gap:28px 56px !important}
+.team .card{flex:0 1 230px !important;text-align:center}
+.team .card:hover{box-shadow:none;transform:translateY(-6px)}
+.tph{position:relative;margin:0 14px 26px 0}
+.tph::before{content:"";position:absolute;inset:0;border:2px solid #FF914D;border-radius:999px 999px 22px 22px;transform:translate(14px,14px);transition:transform .35s ease}
+.team .card:hover .tph::before{transform:translate(8px,8px)}
+.tin::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;z-index:2;pointer-events:none;transform:translateY(100%);transition:transform .6s cubic-bezier(.2,.7,.2,1);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='70' viewBox='0 0 200 70'%3E%3Cpath d='M0 26 Q50 10 100 26 T200 26 V70 H0Z' fill='rgba(0,74,173,.30)'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='70' viewBox='0 0 200 70'%3E%3Cpath d='M0 34 Q50 18 100 34 T200 34 V70 H0Z' fill='rgba(255,145,77,.38)'/%3E%3C/svg%3E");background-repeat:repeat-x;background-size:200px 70px;background-position:0 100%,60px 100%}
+.tph::after{content:"";position:absolute;inset:0;border:2px solid #FF914D;border-radius:999px 999px 22px 22px;transform:translate(14px,14px);opacity:0;pointer-events:none}
+.team .card:hover .tin::after,.team .card:active .tin::after{transform:translateY(0);animation:wv 3s linear infinite}
+.team .card:hover .tph::after,.team .card:active .tph::after{animation:rp 1.8s ease-out infinite}
+.team .card:hover .tph::before{animation:bob 2.4s ease-in-out infinite}
+@keyframes wv{to{background-position:200px 100%,-140px 100%}}
+@keyframes rp{from{transform:translate(14px,14px) scale(1);opacity:.65}to{transform:translate(14px,14px) scale(1.2);opacity:0}}
+@keyframes bob{0%,100%{transform:translate(8px,8px)}50%{transform:translate(8px,13px)}}
+@media (prefers-reduced-motion:reduce){.team .card:hover .tin::after,.team .card:hover .tph::after,.team .card:hover .tph::before{animation:none}.tin::after{transition:none}}
+.tin{position:relative;z-index:1;overflow:hidden;aspect-ratio:3/4;border-radius:999px 999px 22px 22px;background:linear-gradient(170deg,#F5F9FC 0%,#BFD8EA 100%);border:4px solid #FFFFFF;box-sizing:border-box;box-shadow:0 10px 24px rgba(2,53,127,.12)}
+@media (max-width:768px){
+html,body{overflow-x:clip}
+.hd{padding:8px 16px !important;gap:6px 12px !important}
+.hd-brand .mk{height:64px !important}
+.hd-right{width:100%;order:2;justify-content:space-between}
+.hd-nav{width:100%;order:3;flex-wrap:nowrap !important;overflow-x:auto;gap:22px !important;padding-bottom:4px;font-size:14px !important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.hd-nav::-webkit-scrollbar{display:none}
+.hd-nav a{white-space:nowrap}
+.hd-right .btn{padding:10px 20px !important;font-size:14px !important}
+h1{font-size:42px !important;line-height:1.05 !important;overflow-wrap:break-word}
+h2{font-size:34px !important}
+h3{font-size:24px !important}
+[style*="padding:72px 24px 96px"]{padding:18px 20px 56px !important;gap:22px !important}
+[style*="padding:72px 24px 104px"]{padding:44px 20px 64px !important;gap:32px !important}
+[style*="padding:56px 24px"]{padding:40px 20px 64px !important;gap:24px !important}
+[style*="font-size:19px;max-width:480px"]{font-size:17px !important}
+[style*="height:560px"]{height:280px !important;border-radius:140px 140px 24px 24px !important}
+.hero-art{order:-1}
+[style*="height:460px"]{height:260px !important}
+[style*="height:640px"]{height:300px !important}
+[style*="height:520px"]{height:260px !important}
+[style*="height:180px"]{height:140px !important}
+[style*="font-size:96px"]{font-size:68px !important}
+[style*="padding:36px;box-sizing"]{padding:26px !important}
+.team{justify-content:flex-start;flex-wrap:nowrap !important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px !important;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
+.team::-webkit-scrollbar{display:none}
+.team .card{flex:0 0 54% !important;scroll-snap-align:center}
+.team .card:hover{transform:none}
+[style*="repeat(auto-fit,minmax(170px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}
+.btn{padding-left:26px !important;padding-right:26px !important}
+.price-row{padding:12px 6px !important}
+footer > div{padding:28px 20px 96px !important}
+.fab{display:block !important}
+.ph-x{display:none !important}
+.m-first{order:-1}
+.cta2{gap:10px !important}
+.cta2 .btn{padding-left:16px !important;padding-right:16px !important;font-size:15px !important}
+#higiena{padding:26px !important;margin-top:36px !important}
+.pill{padding:10px 16px}
+}
+.fab{display:none;position:fixed;left:16px;right:16px;bottom:14px;z-index:50;text-align:center;background:#004AAD;color:#fff !important;text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:999px;box-shadow:0 10px 26px rgba(2,53,127,.35)}
+@media (min-width:769px){.art-big{transform:scale(1.14);transform-origin:center}}
+.rate:hover span:last-child{text-decoration:underline}
+.rev{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:#FF914D transparent}
+.rev::-webkit-scrollbar{height:6px}
+.rev::-webkit-scrollbar-thumb{background:#FF914D;border-radius:6px}
+.rev .card:hover{transform:none}
+.pill{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px;font-weight:600;padding:11px 20px;border-radius:999px;transition:transform .15s ease,background-color .2s ease}
+.pill svg{flex:none}
+.pill-w{background:rgba(255,255,255,.12);color:#FFFFFF;border:1.5px solid rgba(255,255,255,.55)}
+.pill-w:hover{background:rgba(255,255,255,.24)}
+.pill-b{background:transparent;color:#004AAD;border:1.5px solid #004AAD}
+.pill-b:hover{background:#004AAD;color:#FFFFFF}
+.pill:active,.btn:active,.fab:active{transform:scale(.96) !important}
+.card:active,.tile:active{transform:scale(.98)}
+.tile{cursor:zoom-in;-webkit-tap-highlight-color:transparent}
+.hy-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 32px}
+.hy-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#1F3550}
+.hy-list svg{flex:none;margin-top:2px}
+.brand{display:inline-block;padding:8px 18px;border-radius:999px;background:#FFF3E8;color:#D9692A;font-size:14px;font-weight:600}
+.hrs{display:grid;grid-template-columns:auto 1fr;gap:6px 24px;margin:0;font-size:17px}
+.hrs dt{color:#BFD8EA}
+.hrs dd{margin:0}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(2,31,77,.94);display:none;align-items:center;justify-content:center;touch-action:pan-y}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:84vh;border-radius:16px;object-fit:contain;user-select:none;-webkit-user-drag:none;transition:transform .2s ease,opacity .2s ease}
+.lb button{position:absolute;border:0;cursor:pointer;color:#fff;background:rgba(255,255,255,.14);width:48px;height:48px;border-radius:50%;font-size:26px;line-height:1;display:flex;align-items:center;justify-content:center}
+.lb button:hover{background:rgba(255,255,255,.28)}
+.lb .x{top:max(16px,env(safe-area-inset-top,0px));right:16px}
+.lb .pv{left:12px;top:50%;margin-top:-24px}
+.lb .nx{right:12px;top:50%;margin-top:-24px}
+.lb .ct{position:absolute;bottom:max(18px,env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;color:#BFD8EA;font-size:14px;letter-spacing:.1em}
+@media (max-width:768px){.lb .pv,.lb .nx{display:none}.hrs{font-size:16px}}
+@media (prefers-reduced-motion:reduce){.pill,.lb img{transition:none}}
+header{position:sticky !important;top:0;z-index:60;transition:transform .35s ease}
+header.hide{transform:translateY(-100%)}
+section[id]{scroll-margin-top:84px}
+.prog{position:fixed;left:0;top:0;right:0;height:3px;z-index:100;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#004AAD,#FF914D);pointer-events:none}
+.dots{display:none;justify-content:center;gap:8px;margin:-12px 0 28px}
+.dots.on{display:flex}
+.dots button{width:9px;height:9px;padding:0;border:0;border-radius:99px;background:#BFD8EA;cursor:pointer;transition:width .25s ease,background-color .25s ease}
+.dots button.cur{width:26px;background:#FF914D}
+@keyframes rise{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:none}}
+.card:nth-child(2),.tile:nth-child(2){animation-range:entry 6% entry 50%}
+.card:nth-child(3),.tile:nth-child(3){animation-range:entry 12% entry 55%}
+.card:nth-child(4),.tile:nth-child(4){animation-range:entry 18% entry 60%}
+.tile:nth-child(5){animation-range:entry 6% entry 50%}
+.tile:nth-child(6){animation-range:entry 12% entry 55%}
+@media (prefers-reduced-motion:reduce){header{transition:none}.card,.tile,.reveal{animation:none !important}.dots button{transition:none}}
+.mh{display:none;align-items:center;gap:8px;margin-left:auto;position:relative}
+.mh .bt{display:flex;align-items:center;justify-content:center;gap:6px;height:42px;min-width:42px;padding:0 12px;border:1.5px solid #BFD8EA;background:#FFFFFF;color:#004AAD;border-radius:999px;font:inherit;font-size:14px;font-weight:700;letter-spacing:.04em;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color .2s ease,transform .15s ease}
+.mh .bt:active{transform:scale(.94)}
+.mh .bt[aria-expanded="true"]{background:#DCEBF5}
+.mh .bt svg{transition:transform .25s ease}
+.mh .lg[aria-expanded="true"] svg{transform:rotate(180deg)}
+.bg{width:18px;height:12px;position:relative;display:block}
+.bg i{position:absolute;left:0;right:0;height:2px;border-radius:2px;background:currentColor;transition:transform .25s ease,opacity .2s ease,top .25s ease}
+.bg i:nth-child(1){top:0}.bg i:nth-child(2){top:5px}.bg i:nth-child(3){top:10px}
+.bm[aria-expanded="true"] .bg i:nth-child(1){top:5px;transform:rotate(45deg)}
+.bm[aria-expanded="true"] .bg i:nth-child(2){opacity:0}
+.bm[aria-expanded="true"] .bg i:nth-child(3){top:5px;transform:rotate(-45deg)}
+.lpop{display:none;position:absolute;right:50px;top:48px;min-width:160px;background:#FFFFFF;border:1px solid #DCEBF5;border-radius:16px;box-shadow:0 14px 34px rgba(2,53,127,.16);padding:6px;z-index:70}
+.lpop.on{display:block}
+.lpop a{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;color:#1F3550;text-decoration:none;font-size:16px;font-weight:600}
+.lpop a b{display:inline-block;min-width:26px;color:#004AAD;font-size:13px;letter-spacing:.04em}
+.lpop a[aria-current="true"]{background:#DCEBF5}
+.mpanel{display:none;position:absolute;left:0;right:0;top:100%;background:#F5F9FC;border-bottom:1px solid #DCEBF5;box-shadow:0 18px 30px rgba(2,53,127,.12);padding:6px 16px 14px}
+.mpanel.on{display:block}
+.mpanel a{display:block;padding:15px 4px;color:#1F3550;text-decoration:none;font-size:19px;font-weight:600;border-bottom:1px solid #DCEBF5}
+.mpanel a:last-child{border-bottom:0}
+@media (max-width:768px){
+.hd{flex-wrap:nowrap !important;gap:10px !important;padding:6px 16px !important}
+.hd-brand .mk{height:58px !important}
+.hd-nav,.hd-right{display:none !important}
+.mh{display:flex}
+}
+/* capsule header */
+header{background:transparent !important;border:0 !important;padding:12px 16px 0;pointer-events:none}
+header.hide{transform:translateY(-150%)}
+[id]{scroll-margin-top:84px}
+.hd{pointer-events:auto;min-height:66px;box-sizing:border-box;max-width:1160px !important;padding:6px 12px 6px 26px !important;transition:background-color .4s ease,border-color .4s ease,box-shadow .4s ease;gap:12px 24px !important;flex-wrap:nowrap !important;background:rgba(255,255,255,.8);-webkit-backdrop-filter:blur(16px) saturate(1.5);backdrop-filter:blur(16px) saturate(1.5);border:1px solid rgba(191,216,234,.95);border-radius:999px;box-shadow:0 10px 30px rgba(2,53,127,.10)}
+.hd-brand .mk{height:44px !important;transition:height .4s ease}
+header.at-top .hd{background:transparent;border-color:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+header.at-top .hd-brand .mk{height:52px !important}
+.hd-nav{flex:1;justify-content:center;flex-wrap:nowrap !important;gap:6px 26px !important}
+.hd-right{gap:16px !important}
+.hd-right .btn{padding:11px 22px !important;font-size:15px !important}
+.navlink{white-space:nowrap}
+.navlink::after{height:6px !important;bottom:-10px !important;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 3Q4 0 8 3T16 3' fill='none' stroke='%23FF914D' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x 0 0/16px 6px !important;animation:navw 1s linear infinite}
+@keyframes navw{to{background-position-x:16px}}
+.navlink[aria-current]{color:#004AAD !important}
+.navlink[aria-current]::after{transform:scaleX(1)}
+@media (max-width:960px){
+.hd{min-height:58px;padding:4px 8px 4px 18px !important;gap:10px !important}
+.hd-brand .mk{height:38px !important}
+header.at-top .hd-brand .mk{height:46px !important}
+.hd-nav,.hd-right{display:none !important}
+.mh{display:flex}
+.mh .bt{height:40px}
+.lpop{top:50px}
+.mpanel{pointer-events:auto;left:16px;right:16px;top:calc(100% + 8px);background:#FFFFFF;border:1px solid rgba(191,216,234,.95);border-radius:28px;box-shadow:0 18px 40px rgba(2,53,127,.16);padding:8px 20px 20px;max-height:calc(100vh - 110px);overflow:auto}
+.mpanel a{font-size:19px;padding:12px 4px}
+.mpanel a[aria-current]{color:#004AAD}
+.mpanel .mp-act{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.mpanel .mpb{display:inline-flex;flex:1 1 auto;justify-content:center;align-items:center;gap:6px;padding:11px 10px;border:1.5px solid #BFD8EA;border-radius:999px;background:#FFFFFF;color:#004AAD;font-size:14px;font-weight:600;text-decoration:none}
+.mpanel .mpb svg{flex:none}
+.mpanel .mpb.main{flex:1 1 100%;justify-content:center;background:#004AAD;border-color:#004AAD;color:#FFFFFF;padding:14px 16px;font-size:16px}
+}
+@media (min-width:961px){.mh,.mpanel{display:none !important}}
+@media (prefers-reduced-motion:reduce){.navlink::after{animation:none}.hd,.hd-brand .mk{transition:none}}
+
+@media (prefers-reduced-motion:reduce){.mh .bt,.mh .bt svg,.bg i{transition:none}}
+.fab{transition:opacity .25s ease,transform .3s ease}
+.fab.off{opacity:0;transform:translateY(130%);pointer-events:none}
+@media (prefers-reduced-motion:reduce){.fab{transition:none}}
+.wv1{animation:wvm 16s linear infinite}
+.wv2{animation:wvm 26s linear infinite reverse}
+@keyframes wvm{from{transform:translateX(0)}to{transform:translateX(-720px)}}
+@media (prefers-reduced-motion:reduce){.wv1,.wv2{animation:none}}
+.wl1{animation:wlr 12s linear infinite}
+.wl2{animation:wll 17s linear infinite}
+@keyframes wlr{to{transform:translateX(100px)}}
+@keyframes wll{to{transform:translateX(-100px)}}
+@media (prefers-reduced-motion:reduce){.wl1,.wl2{animation:none}}
+.hero-blob{animation:mo 9s ease-in-out infinite}.hero-blob{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.hero-blob.pop{animation:pop 1.1s cubic-bezier(.3,.7,.3,1) 1}
+@keyframes pop{0%{transform:scale(1)}14%{transform:scale(.9,1.08);border-radius:38% 62% 30% 70%/68% 34% 66% 32%}34%{transform:scale(1.1,.92);border-radius:70% 30% 66% 34%/30% 70% 36% 64%}54%{transform:scale(.95,1.05);border-radius:34% 66% 58% 42%/62% 38% 62% 38%}74%{transform:scale(1.03,.98);border-radius:54% 46% 40% 60%/42% 58% 46% 54%}100%{transform:scale(1)}}
+@keyframes mo{50%{border-radius:44% 56% 46% 54%/56% 44% 56% 44%}}
+@media (max-width:768px){.hero-blob{max-width:none !important}}
+@media (prefers-reduced-motion:reduce){.hero-blob,.hero-blob.pop{animation:none}}
+.hero-wrap{position:relative;width:100%;max-width:460px}
+.hb{position:absolute;border-radius:50%;overflow:hidden;border:4px solid #fff;box-sizing:border-box;box-shadow:0 10px 24px rgba(2,53,127,.18);animation:floaty 7s ease-in-out infinite;z-index:2}
+.hb::before{content:"";display:block;padding-top:100%}
+.hb img{position:absolute;left:0;top:0;width:100% !important;height:100% !important;max-width:none !important;object-fit:cover;object-position:center}
+.hb1{width:34%;left:-9%;bottom:4%}
+.hb2{width:26%;right:-5%;top:6%;animation-delay:-3s}
+.hero-fx{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 140px,#000 62%,transparent 96%);mask-image:linear-gradient(to bottom,transparent 0,#000 140px,#000 62%,transparent 96%)}
+.hero-fx::before,.hero-fx::after{content:"";position:absolute;border-radius:50%;animation:glow 16s ease-in-out infinite alternate}
+.hero-fx::before{width:620px;height:620px;right:-160px;top:-160px;background:radial-gradient(circle,rgba(255,196,150,.5),transparent 66%)}
+.hero-fx::after{width:560px;height:560px;left:-180px;bottom:-200px;background:radial-gradient(circle,rgba(120,175,225,.38),transparent 66%);animation-delay:-8s}
+@keyframes glow{from{transform:translate(0,0) scale(1)}to{transform:translate(-50px,40px) scale(1.15)}}
+.hero-fx i{position:absolute;bottom:-40px;width:var(--s);height:var(--s);border-radius:50%;border:1px solid rgba(0,74,173,.28);background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.95) 0,rgba(255,255,255,.55) 14%,rgba(190,220,245,.28) 45%,rgba(120,175,225,.14) 100%);box-shadow:inset -1px -1px 2px rgba(0,74,173,.12);opacity:0;animation:bub var(--d) cubic-bezier(.35,.1,.7,.9) infinite,wob var(--w) ease-in-out infinite alternate,swy calc(var(--w) * 1.7) ease-in-out infinite alternate;animation-delay:var(--dl),var(--dl),var(--dl)}
+@keyframes bub{0%{translate:0 0;opacity:0}7%{opacity:.85}85%{opacity:.6}100%{translate:0 -1000px;opacity:0}}
+@keyframes wob{0%{scale:1 1;border-radius:50%}50%{scale:1.1 .92;border-radius:48% 52% 55% 45%/52% 46% 54% 48%}100%{scale:.93 1.08;border-radius:52% 48% 46% 54%/46% 54% 48% 52%}}
+@keyframes swy{from{transform:translateX(-9px)}to{transform:translateX(9px)}}
+@media (max-width:768px){.hero-wrap{max-width:172px}.hb1{width:40%}.hb2{width:30%}.hb{border-width:3px}.hero-tag{margin-bottom:14px !important}.hero-fx i{transform-origin:center}.hero-fx{opacity:.8}}
+@media (prefers-reduced-motion:reduce){.hb,.hero-fx::before,.hero-fx::after{animation:none}.hero-fx i{display:none}}
+
+</style>
+
+<!-- SEO: ZAMIEŃ https://oceanbeautypl.netlify.app NA SWOJĄ DOMENĘ we wszystkich 4 plikach (hreflang, canonical, og:url, JSON-LD) -->
+<link rel="canonical" href="https://oceanbeautypl.netlify.app/ua/">
+<link rel="alternate" hreflang="pl" href="https://oceanbeautypl.netlify.app/">
+<link rel="alternate" hreflang="uk" href="https://oceanbeautypl.netlify.app/ua/">
+<link rel="alternate" hreflang="en" href="https://oceanbeautypl.netlify.app/en/">
+<link rel="alternate" hreflang="ru" href="https://oceanbeautypl.netlify.app/ru/">
+<link rel="alternate" hreflang="x-default" href="https://oceanbeautypl.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ocean Beauty — Nail World">
+<meta property="og:title" content="Ocean Beauty — Nail World | Манікюр і педикюр, Варшава Воля">
+<meta property="og:description" content="Салон манікюру й педикюру та курси у варшавській Волі. ul. Jana Kazimierza 32 B. Запис онлайн.">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:url" content="https://oceanbeautypl.netlify.app/ua/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BeautySalon", "name": "Ocean Beauty — Nail World", "image": "https://oceanbeautypl.netlify.app/img/logo-full.svg", "telephone": "+48577418424", "address": {"@type": "PostalAddress", "streetAddress": "ul. Jana Kazimierza 32 B", "postalCode": "01-248", "addressLocality": "Warszawa", "addressCountry": "PL"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "10:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "20:00"}], "geo": {"@type": "GeoCoordinates", "latitude": 52.2249441, "longitude": 20.9426204}, "sameAs": ["https://www.instagram.com/ocean.beauty.wola/", "https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa"], "inLanguage": "uk"}</script>
+</head>
+<body>
+
+<div style="background:#F5F9FC;color:#1F3550;font-family:'Nunito',system-ui,sans-serif;line-height:1.6;overflow:clip">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="d-shell" viewBox="-4 5 88 68">
+<path d="M1.9 40.2Q-1.3 31.7 7.8 31Q7 21.8 15.9 23.6Q17.4 14.5 25.6 18.5Q29.4 10.2 36.3 16.2Q42.1 9 47.3 16.6Q54.7 11.3 57.7 19.9Q66.3 16.7 67 25.8Q76.1 24.9 74.4 33.9Q83.5 35.4 79.5 43.6L40 58Z"></path>
+<path fill="none" d="M40 58L7.8 31M40 58L15.9 23.6M40 58L25.6 18.5M40 58L36.3 16.2M40 58L47.3 16.6M40 58L57.7 19.9M40 58L67 25.8M40 58L74.4 33.9"></path>
+<path d="M31 61L40 54L49 61L46 66L34 66Z"></path>
+<circle cx="40" cy="63" r="4.6"></circle>
+</symbol>
+<symbol id="d-coral" viewBox="0 0 100 120">
+<path d="M50 118C50 92 47 72 50 50"></path>
+<path d="M49 92C37 82 29 68 27 49"></path>
+<path d="M27 49C27 41 23 35 20 28"></path>
+<path d="M27 49C30 41 35 35 37 27"></path>
+<path d="M51 72C63 64 70 52 72 35"></path>
+<path d="M72 35C72 29 69 23 66 17"></path>
+<path d="M72 35C74 29 79 25 83 21"></path>
+<path d="M50 52C47 41 49 31 54 21"></path>
+<circle cx="20" cy="27" r="3.5" fill="currentColor"></circle>
+<circle cx="37" cy="26" r="3.5" fill="currentColor"></circle>
+<circle cx="66" cy="16" r="3.5" fill="currentColor"></circle>
+<circle cx="83" cy="20" r="3.5" fill="currentColor"></circle>
+<circle cx="54" cy="20" r="3.5" fill="currentColor"></circle>
+</symbol>
+<symbol id="d-star" viewBox="0 0 100 100">
+<path d="M50 10L59.4 37.1L88 37.6L65.2 54.9L73.5 82.4L50 66L26.5 82.4L34.8 54.9L12 37.6L40.6 37.1Z"></path>
+<circle cx="50" cy="48" r="3" fill="currentColor"></circle>
+</symbol>
+<symbol id="d-seaweed" viewBox="0 0 60 150">
+<path d="M20 150C4 124 36 108 20 82C6 58 34 40 20 10"></path>
+<path d="M34 150C18 128 48 112 34 90C22 68 46 52 36 28"></path>
+<path d="M46 150C34 132 58 120 46 100C38 86 54 74 48 58"></path>
+</symbol>
+<symbol id="d-wave" viewBox="0 0 400 40">
+<path vector-effect="non-scaling-stroke" d="M0 14Q25 -4 50 14T100 14T150 14T200 14T250 14T300 14T350 14T400 14"></path>
+<path vector-effect="non-scaling-stroke" d="M0 30Q25 12 50 30T100 30T150 30T200 30T250 30T300 30T350 30T400 30"></path>
+</symbol>
+<symbol id="d-bubbles" viewBox="0 0 80 100">
+<circle cx="22" cy="80" r="12"></circle>
+<circle cx="52" cy="52" r="8"></circle>
+<circle cx="30" cy="28" r="5"></circle>
+<circle cx="60" cy="14" r="3.5"></circle>
+<circle cx="14" cy="50" r="4"></circle>
+</symbol>
+<symbol id="d-pearls" viewBox="0 0 70 44">
+<circle cx="20" cy="28" r="12"></circle>
+<circle cx="46" cy="30" r="10"></circle>
+<circle cx="34" cy="12" r="7"></circle>
+<circle cx="16" cy="24" r="2.5" fill="#FFFFFF" fill-opacity=".8" stroke="none"></circle>
+<circle cx="43" cy="26" r="2" fill="#FFFFFF" fill-opacity=".8" stroke="none"></circle>
+<circle cx="32" cy="9" r="1.6" fill="#FFFFFF" fill-opacity=".8" stroke="none"></circle>
+</symbol>
+</defs>
+</svg>
+
+<!-- HEADER -->
+<header style="position:relative;background:#F5F9FC;border-bottom:1px solid #DCEBF5">
+<div class="hd" style="max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px">
+<a href="#top" class="hd-brand" aria-label="Ocean Beauty — Nail World" style="display:flex;align-items:center;text-decoration:none"><img class="mk" src="../img/logo-full.svg" alt="Ocean Beauty — Nail World" style="height:76px;width:auto;display:block"></a>
+<nav aria-label="Головне меню" class="hd-nav" style="display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;font-weight:500">
+<a href="#manicure" class="navlink" style="color:#1F3550;text-decoration:none">Манікюр</a>
+<a href="#pedicure" class="navlink" style="color:#1F3550;text-decoration:none">Педикюр</a>
+<a href="#galeria" class="navlink" style="color:#1F3550;text-decoration:none">Галерея</a>
+<a href="#onas" class="navlink" style="color:#1F3550;text-decoration:none">Про нас</a>
+<a href="#kursy" class="navlink" style="color:#1F3550;text-decoration:none">Курси</a>
+<a href="#kontakt" class="navlink" style="color:#1F3550;text-decoration:none">Контакти</a>
+</nav>
+<div class="hd-right" style="display:flex;align-items:center;gap:20px">
+<div style="display:flex;gap:10px;font-size:13px;font-weight:600;letter-spacing:0.04em"><a href="../" hreflang="pl" lang="pl" style="color:#3A5470;text-decoration:none">PL</a><a href="./" hreflang="uk" lang="uk" aria-current="true" style="color:#004AAD;text-decoration:none">UA</a><a href="../en/" hreflang="en" lang="en" style="color:#3A5470;text-decoration:none">EN</a><a href="../ru/" hreflang="ru" lang="ru" style="color:#3A5470;text-decoration:none">RU</a></div>
+<a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="btn btn-shine" style="background:#004AAD;color:#FFFFFF;text-decoration:none;font-size:15px;font-weight:600;padding:12px 24px;border-radius:999px">Записатися</a>
+</div>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#F5F9FC 0%,#F0F6FB 100%)">
+<div class="hero-fx" aria-hidden="true"><i style="left:4%;--s:7px;--d:17s;--dl:-1s;--w:3.9s"></i><i style="left:9%;--s:12px;--d:23s;--dl:-9s;--w:3.5s"></i><i style="left:13%;--s:6px;--d:15s;--dl:-5s;--w:4.6s"></i><i style="left:19%;--s:18px;--d:27s;--dl:-14s;--w:3.4s"></i><i style="left:24%;--s:8px;--d:19s;--dl:-3s;--w:4.4s"></i><i style="left:31%;--s:10px;--d:22s;--dl:-11s;--w:4.0s"></i><i style="left:37%;--s:6px;--d:16s;--dl:-7s;--w:3.3s"></i><i style="left:43%;--s:16px;--d:29s;--dl:-2s;--w:4.3s"></i><i style="left:49%;--s:9px;--d:20s;--dl:-13s;--w:3.3s"></i><i style="left:55%;--s:7px;--d:18s;--dl:-6s;--w:4.2s"></i><i style="left:61%;--s:20px;--d:31s;--dl:-16s;--w:3.4s"></i><i style="left:67%;--s:8px;--d:21s;--dl:-4s;--w:3.4s"></i><i style="left:73%;--s:11px;--d:24s;--dl:-10s;--w:4.1s"></i><i style="left:79%;--s:6px;--d:17s;--dl:-8s;--w:5.0s"></i><i style="left:85%;--s:15px;--d:28s;--dl:-12s;--w:3.5s"></i><i style="left:91%;--s:9px;--d:19s;--dl:-15s;--w:3.7s"></i><i style="left:96%;--s:7px;--d:16s;--dl:-0s;--w:4.6s"></i></div>
+<div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 96px;display:flex;flex-wrap:wrap;align-items:center;gap:48px">
+<div style="flex:1 1 440px;min-width:0">
+<p class="hero-in" style="margin:0 0 20px;font-size:14px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#D9692A">Салон Ocean Beauty · Воля</p>
+<h1 class="hero-in" style="animation-delay:.15s;margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(35px,5.4vw,70px);line-height:1.04;color:#004AAD">Манікюр і педикюр у Варшаві</h1>
+<p class="hero-in hero-tag" style="animation-delay:.22s;margin:0 0 22px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(24px,2.6vw,32px);line-height:1.2;color:#D9692A">Краса, що тече природно</p>
+<p class="hero-in" style="animation-delay:.3s;margin:0 0 36px;font-size:19px;max-width:480px;color:#1F3550">Зануртеся в спокій. Манікюр і педикюр у салоні, де час тече повільніше. Подбаємо про ваші руки та стопи, а результат залишиться з вами надовго.</p>
+<div class="hero-in" style="animation-delay:.45s;display:flex;flex-wrap:wrap;gap:14px;margin-bottom:36px">
+<a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="btn" style="background:#004AAD;color:#FFFFFF;text-decoration:none;font-size:16px;font-weight:600;padding:16px 32px;border-radius:999px">Записатися</a>
+<a href="#manicure" class="btn btn-outline" style="background:transparent;color:#004AAD;text-decoration:none;font-size:16px;font-weight:600;padding:14px 30px;border-radius:999px;border:2px solid #004AAD">Дивитися ціни</a>
+</div>
+<a href="#opinie" class="rate" style="display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 10px;text-decoration:none;font-size:15px;color:#3A5470"><span style="display:inline-flex;gap:2px" role="img" aria-label="5 із 5 зірок"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg></span><strong style="color:#004AAD;font-size:20px">5,0</strong><span>· 358 відгуків на Booksy</span></a>
+</div>
+<div class="hero-art" style="flex:1 1 380px;min-width:0;display:flex;justify-content:center">
+<div class="hero-wrap"><div class="hero-blob" style="position:relative;overflow:hidden;width:100%;max-width:460px;aspect-ratio:1/1.04;border-radius:58% 42% 52% 48%/48% 56% 44% 52%;background:linear-gradient(170deg,#BFD8EA 0%,#DCEBF5 42%,#FFE3CF 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#004AAD;padding:24px;box-sizing:border-box;box-shadow:0 18px 40px rgba(2,53,127,.14)">
+<svg class="decor" aria-hidden="true" width="100%" height="40" viewBox="0 0 400 40" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="left:0;bottom:0;color:#004AAD;opacity:.3"><g class="wl1"><path vector-effect="non-scaling-stroke" d="M-100 15Q-75 -3 -50 15T0 15T50 15T100 15T150 15T200 15T250 15T300 15T350 15T400 15T450 15T500 15"/></g><g class="wl2"><path vector-effect="non-scaling-stroke" d="M-100 25Q-75 43 -50 25T0 25T50 25T100 25T150 25T200 25T250 25T300 25T350 25T400 25T450 25T500 25"/></g></svg>
+<img class="float" src="../img/logo-full.svg" alt="Ocean Beauty — Nail World" style="position:relative;z-index:1;width:82%;max-width:380px;height:auto">
+</div><div class="hb hb1"><img src="../img/french.jpg" alt="Френч конструкційний" loading="lazy"></div><div class="hb hb2"><img src="../img/tulips.jpg" alt="Рожевий манікюр на тлі тюльпанів" loading="lazy"></div></div>
+</div>
+</div>
+</section>
+
+<!-- MANICURE -->
+<section id="manicure" style="position:relative;overflow:hidden;background:#DCEBF5">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#F0F6FB"/></g></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="60" height="150" viewBox="0 0 60 150" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" style="left:1%;bottom:70px;color:#004AAD;opacity:.18"><use href="#d-seaweed"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="64" height="80" viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="2.5" style="left:47%;top:60px;color:#004AAD;opacity:.2"><use href="#d-bubbles"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+<div style="flex:1 1 440px;min-width:0">
+<p style="margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#D9692A">Послуги</p>
+<h2 style="margin:0 0 20px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Манікюр</h2>
+<p style="margin:0 0 32px;font-size:17px;max-width:500px">Від класичного до гібридного, гелевого та з нарощуванням. Підберемо форму, довжину й колір під ваш стиль і стан нігтів.</p>
+<div style="background:#F5F9FC;border-radius:24px;padding:12px 16px">
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Манікюр (без покриття)<br><span style="font-size:14px;color:#3A5470">40 хв</span></span><strong style="color:#004AAD;white-space:nowrap">120 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Повне зняття + манікюр<br><span style="font-size:14px;color:#3A5470">1 год.</span></span><strong style="color:#004AAD;white-space:nowrap">140 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Манікюр гель-лаком + зняття<br><span style="font-size:14px;color:#3A5470">від 1 год. 50 хв</span></span><strong style="color:#004AAD;white-space:nowrap">від 180 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Зняття<br><span style="font-size:14px;color:#3A5470">30 хв</span></span><strong style="color:#004AAD;white-space:nowrap">60 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Чоловічий манікюр<br><span style="font-size:14px;color:#3A5470">1 год.</span></span><strong style="color:#004AAD;white-space:nowrap">140 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Корекція гелем / полігелем<br><span style="font-size:14px;color:#3A5470">від 2 год.</span></span><strong style="color:#004AAD;white-space:nowrap">від 210 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #DCEBF5"><span>Нарощування нігтів гелем<br><span style="font-size:14px;color:#3A5470">від 2 год.</span></span><strong style="color:#004AAD;white-space:nowrap">від 270 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px"><span>Френч конструкційний<br><span style="font-size:14px;color:#3A5470">від 3 год.</span></span><strong style="color:#004AAD;white-space:nowrap">від 400 zł</strong></div>
+</div>
+<p style="margin:16px 0 28px;font-size:14px;color:#3A5470">Ціни залежать від довжини нігтів і досвіду стиліста. Актуальний прайс — у системі запису.</p>
+<a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="btn" style="display:inline-block;background:#004AAD;color:#FFFFFF;text-decoration:none;font-size:16px;font-weight:600;padding:16px 32px;border-radius:999px">Записатися на манікюр</a>
+</div>
+<div class="m-first" style="flex:1 1 380px;min-width:0;align-self:center"><img src="../img/hands.png" alt="Ілюстрація: руки та океанські хвилі" style="display:block;width:100%;height:auto"></div>
+</div>
+</section>
+
+<!-- PEDICURE -->
+<section id="pedicure" style="position:relative;overflow:hidden;background:#FFF3E8">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#DCEBF5"/></g></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="90" height="108" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="right:1%;bottom:60px;color:#004AAD;opacity:.14"><use href="#d-coral"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="100" height="77" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="right:2%;top:90px;color:#004AAD;opacity:.16"><use href="#d-shell"></use></svg>
+<svg class="decor decor-edge" aria-hidden="true" width="90" height="57" viewBox="0 0 70 44" fill="currentColor" fill-opacity=".28" stroke="currentColor" stroke-width="2" style="left:2%;bottom:50px;color:#FF914D;opacity:.2"><use href="#d-pearls"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+<div style="flex:1 1 380px;min-width:0"><img src="../img/foot.png" alt="Ілюстрація: стопа та океанські хвилі" style="display:block;width:100%;height:auto"></div>
+<div style="flex:1 1 440px;min-width:0">
+<p style="margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#D9692A">Послуги</p>
+<h2 style="margin:0 0 20px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Педикюр</h2>
+<p style="margin:0 0 32px;font-size:17px;max-width:500px">Доглянуті ступні й легкість щодня. Класичний і з гель-лаком, також чоловічий — виконаний точно й комфортно.</p>
+<div style="background:#DCEBF5;border-radius:24px;padding:12px 16px">
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #F5F9FC"><span>Повний педикюр + гель-лак + зняття<br><span style="font-size:14px;color:#3A5470">1 год. 30 хв</span></span><strong style="color:#004AAD;white-space:nowrap">від 200 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #F5F9FC"><span>Педикюр + гель-лак + зняття (без п’ят)<br><span style="font-size:14px;color:#3A5470">від 1 год.</span></span><strong style="color:#004AAD;white-space:nowrap">від 180 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px;border-bottom:1px solid #F5F9FC"><span>Класичний педикюр (без покриття)<br><span style="font-size:14px;color:#3A5470">40 хв</span></span><strong style="color:#004AAD;white-space:nowrap">150 zł</strong></div>
+<div class="price-row" style="display:flex;justify-content:space-between;gap:16px;padding:16px 12px"><span>Чоловічий педикюр<br><span style="font-size:14px;color:#3A5470">1 год.</span></span><strong style="color:#004AAD;white-space:nowrap">180 zł</strong></div>
+</div>
+<p style="margin:16px 0 28px;font-size:14px;color:#3A5470">Ціна залежить від рівня стиліста. Актуальний прайс — у системі запису.</p>
+<a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="btn" style="display:inline-block;background:#004AAD;color:#FFFFFF;text-decoration:none;font-size:16px;font-weight:600;padding:16px 32px;border-radius:999px">Записатися на педикюр</a>
+</div>
+</div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" style="position:relative;overflow:hidden;background:#F5F9FC">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFF3E8"/></g></svg>
+<svg class="decor decor-edge spin" aria-hidden="true" width="100" height="100" viewBox="0 0 100 100" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="right:4%;top:90px;color:#FF914D;opacity:.18"><use href="#d-star"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px">
+<h2 style="margin:0 0 48px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Галерея</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px">
+<div class="tile" style="position:relative;overflow:hidden;aspect-ratio:3/5;border-radius:20px;background:#DCEBF5"><img src="../img/tulips.jpg" alt="Рожевий манікюр на тлі тюльпанів" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%"></div>
+<div class="tile" style="position:relative;overflow:hidden;aspect-ratio:3/5;border-radius:20px;background:#DCEBF5"><img src="../img/ombre.jpg" alt="Молочно-рожевий манікюр, мигдалеподібна форма" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%"></div>
+<div class="tile" style="position:relative;overflow:hidden;aspect-ratio:3/5;border-radius:20px;background:#DCEBF5"><img src="../img/blue.jpg" alt="Синій манікюр" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div>
+<div class="tile" style="position:relative;overflow:hidden;aspect-ratio:3/5;border-radius:20px;background:#DCEBF5"><img src="../img/french.jpg" alt="Френч конструкційний" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div>
+<div class="tile" style="position:relative;overflow:hidden;aspect-ratio:3/5;border-radius:20px;background:#DCEBF5"><img src="../img/redfrench.jpg" alt="Червоний манікюр із френчем" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%"></div>
+<div class="tile" style="position:relative;overflow:hidden;aspect-ratio:3/5;border-radius:20px;background:#DCEBF5"><img src="../img/redjeans.jpg" alt="Червоний манікюр" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%"></div>
+</div>
+<p style="margin:20px 0 0;font-size:15px;color:#3A5470">Більше робіт в Instagram <a href="https://www.instagram.com/ocean.beauty.wola/" style="color:#004AAD">@ocean.beauty.wola</a></p>
+<a href="https://www.instagram.com/ocean.beauty.wola/" target="_blank" rel="noopener" class="pill pill-b" style="margin-top:20px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span>Ми в Instagram</span></a>
+</div>
+</section>
+
+<!-- OPINIE -->
+<section id="opinie" style="position:relative;overflow:hidden;background:#DCEBF5">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#F5F9FC"/></g></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="100" height="77" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="left:42%;top:60px;color:#004AAD;opacity:.18"><use href="#d-shell"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="56" height="70" viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="2.5" style="left:3%;bottom:30px;color:#004AAD;opacity:.22"><use href="#d-bubbles"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:56px 24px 96px">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;margin-bottom:40px">
+<div style="flex:1 1 360px;min-width:0">
+<p style="margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#D9692A">Відгуки</p>
+<h2 style="margin:0 0 12px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Відгуки клієнтів</h2>
+<p style="margin:0;font-size:17px;max-width:460px">Клієнтки рекомендують нас на Booksy. Майже всі відгуки — п’ять зірок.</p>
+</div>
+<div style="background:#F5F9FC;border-radius:28px;padding:28px 36px;display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:88px;line-height:1;color:#004AAD">5,0</span>
+<div>
+<span style="display:inline-flex;gap:4px" role="img" aria-label="5 із 5 зірок"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.6 21l1.6-7L2 9.3l7-.7z" fill="#FF914D" stroke="#FF914D" stroke-width="1" stroke-linejoin="round"/></svg></span>
+<p style="margin:8px 0 0;font-size:15px;color:#1F3550"><strong>358 відгуків</strong> на Booksy<br><span style="font-size:14px;color:#3A5470">355 із них — 5 зірок</span></p>
+</div>
+</div>
+</div>
+<div class="rev" tabindex="0" aria-label="Відгуки клієнтів — прокрутіть убік" style="display:flex;gap:20px;margin-bottom:40px">
+<figure class="card" style="margin:0;flex:1 0 min(86%,340px);scroll-snap-align:start;min-width:0;background:#F5F9FC;border-radius:24px;padding:32px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;justify-content:space-between">
+<span aria-hidden="true" style="position:absolute;right:24px;top:6px;font-family:'Cormorant Garamond',Georgia,serif;font-size:96px;line-height:1;color:#FF914D;opacity:.35">&rdquo;</span>
+<blockquote style="margin:0 0 22px;padding-right:34px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:22px;line-height:1.35;color:#004AAD;position:relative">&bdquo;Gorąco polecam! Paznokcie wykonane pięknie i bardzo starannie. Od miesięcy korzystam z usług Pani Iriny i szczerze polecam.&rdquo;</blockquote>
+<figcaption style="font-size:15px;display:flex;align-items:center;gap:14px"><span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#FFD9BF,#BFD8EA);color:#004AAD;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px">P</span><span><strong style="color:#1F3550">Paulina</strong><br><span style="color:#3A5470;font-size:14px">Корекція гелем / полігелем</span></span></figcaption>
+</figure>
+<figure class="card" style="margin:0;flex:1 0 min(86%,340px);scroll-snap-align:start;min-width:0;background:#F5F9FC;border-radius:24px;padding:32px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;justify-content:space-between">
+<span aria-hidden="true" style="position:absolute;right:24px;top:6px;font-family:'Cormorant Garamond',Georgia,serif;font-size:96px;line-height:1;color:#FF914D;opacity:.35">&rdquo;</span>
+<blockquote style="margin:0 0 22px;padding-right:34px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:22px;line-height:1.35;color:#004AAD;position:relative">&bdquo;Chodzę do Pani Iriny. Bardzo polecam, jestem zachwycona precyzją.&rdquo;</blockquote>
+<figcaption style="font-size:15px;display:flex;align-items:center;gap:14px"><span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#FFD9BF,#BFD8EA);color:#004AAD;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px">N</span><span><strong style="color:#1F3550">Natalia</strong><br><span style="color:#3A5470;font-size:14px">Манікюр гель-лаком + зняття</span></span></figcaption>
+</figure>
+<figure class="card" style="margin:0;flex:1 0 min(86%,340px);scroll-snap-align:start;min-width:0;background:#F5F9FC;border-radius:24px;padding:32px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;justify-content:space-between">
+<span aria-hidden="true" style="position:absolute;right:24px;top:6px;font-family:'Cormorant Garamond',Georgia,serif;font-size:96px;line-height:1;color:#FF914D;opacity:.35">&rdquo;</span>
+<blockquote style="margin:0 0 22px;padding-right:34px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;line-height:1.2;color:#004AAD;position:relative">&bdquo;Найліпший манікюр в цілій Польщі!!!!&rdquo;</blockquote>
+<figcaption style="font-size:15px;display:flex;align-items:center;gap:14px"><span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#FFD9BF,#BFD8EA);color:#004AAD;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px">A</span><span><strong style="color:#1F3550">Arat</strong><br><span style="color:#3A5470;font-size:14px">Корекція нарощених нігтів</span></span></figcaption>
+</figure>
+<figure class="card" style="margin:0;flex:1 0 min(86%,340px);scroll-snap-align:start;min-width:0;background:#F5F9FC;border-radius:24px;padding:32px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;justify-content:space-between">
+<span aria-hidden="true" style="position:absolute;right:24px;top:6px;font-family:'Cormorant Garamond',Georgia,serif;font-size:96px;line-height:1;color:#FF914D;opacity:.35">&rdquo;</span>
+<blockquote style="margin:0 0 22px;padding-right:34px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;line-height:1.2;color:#004AAD;position:relative">&bdquo;Idealnie 💗💗💗&rdquo;</blockquote>
+<figcaption style="font-size:15px;display:flex;align-items:center;gap:14px"><span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#FFD9BF,#BFD8EA);color:#004AAD;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px">O</span><span><strong style="color:#1F3550">Oksana</strong><br><span style="color:#3A5470;font-size:14px">Манікюр гель-лаком + зняття, педикюр + гель-лак</span></span></figcaption>
+</figure>
+<figure class="card" style="margin:0;flex:1 0 min(86%,340px);scroll-snap-align:start;min-width:0;background:#F5F9FC;border-radius:24px;padding:32px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;justify-content:space-between">
+<span aria-hidden="true" style="position:absolute;right:24px;top:6px;font-family:'Cormorant Garamond',Georgia,serif;font-size:96px;line-height:1;color:#FF914D;opacity:.35">&rdquo;</span>
+<blockquote style="margin:0 0 22px;padding-right:34px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;line-height:1.2;color:#004AAD;position:relative">&bdquo;Stylistka Iryna top 🌸&rdquo;</blockquote>
+<figcaption style="font-size:15px;display:flex;align-items:center;gap:14px"><span aria-hidden="true" style="flex:none;width:48px;height:48px;border-radius:50%;background:linear-gradient(140deg,#FFD9BF,#BFD8EA);color:#004AAD;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px">J</span><span><strong style="color:#1F3550">Jagoda</strong><br><span style="color:#3A5470;font-size:14px">Корекція гелем / полігелем</span></span></figcaption>
+</figure>
+</div>
+<a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="btn" style="display:inline-block;background:#004AAD;color:#FFFFFF;text-decoration:none;font-size:16px;font-weight:600;padding:16px 32px;border-radius:999px">Усі відгуки на Booksy</a>
+</div>
+</section>
+
+<!-- DLACZEGO -->
+<section style="position:relative;overflow:hidden;background:#F5F9FC">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#DCEBF5"/></g></svg>
+<svg class="decor decor-edge spin" aria-hidden="true" width="90" height="90" viewBox="0 0 100 100" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="left:4%;top:90px;color:#FF914D;opacity:.18"><use href="#d-star"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="110" height="85" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="right:4%;top:110px;color:#004AAD;opacity:.16"><use href="#d-shell"></use></svg>
+<svg class="decor decor-edge" aria-hidden="true" width="100" height="64" viewBox="0 0 70 44" fill="currentColor" fill-opacity=".28" stroke="currentColor" stroke-width="2" style="left:5%;bottom:50px;color:#FF914D;opacity:.22"><use href="#d-pearls"></use></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="90" height="108" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="right:5%;bottom:30px;color:#004AAD;opacity:.14"><use href="#d-coral"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px">
+<h2 style="margin:0 0 56px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD;text-align:center">Чому Ocean Beauty</h2>
+<div style="display:flex;flex-wrap:wrap;gap:32px">
+<div style="flex:1 1 240px;min-width:0;text-align:center;padding:0 12px">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 5C22 5 10 18 10 27a12 12 0 0 0 24 0C34 18 22 5 22 5Z"/></svg>
+<h3 style="margin:16px 0 8px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;color:#004AAD">Індивідуальний підхід</h3>
+<p style="margin:0;font-size:15px;color:#1F3550">Підбираємо процедуру під вас, а не навпаки.</p>
+</div>
+<div style="flex:1 1 240px;min-width:0;text-align:center;padding:0 12px"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="22" cy="15" r="7"/><path d="M8 38c1-8 7-12 14-12s13 4 14 12"/></svg>
+<h3 style="margin:16px 0 8px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;color:#004AAD">Досвідчена команда</h3>
+<p style="margin:0;font-size:15px;color:#1F3550">Наші стилістки мають від 7 до 13 років досвіду.</p>
+</div>
+<div style="flex:1 1 240px;min-width:0;text-align:center;padding:0 12px">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#004AAD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 40S9 27 9 17a13 13 0 0 1 26 0c0 10-13 23-13 23Z"/><circle cx="22" cy="17" r="4.5"/></svg>
+<h3 style="margin:16px 0 8px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;color:#004AAD">Зручне розташування</h3>
+<p style="margin:0;font-size:15px;color:#1F3550">Поруч трамвайні та автобусні зупинки, а поблизу легко припаркуватися.</p>
+</div>
+</div>
+<div id="higiena" class="reveal" style="margin-top:56px;background:#FFFFFF;border-radius:28px;padding:40px;box-shadow:0 14px 40px rgba(2,53,127,.08)">
+<h3 style="margin:0 0 8px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:32px;color:#004AAD">Гігієна та матеріали</h3>
+<p style="margin:0 0 24px;font-size:16px;color:#3A5470">Дбаємо про все, що торкається вашої шкіри.</p>
+<ul class="hy-list"><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-7"/></svg><span>Дезінфекція робочого місця після кожного візиту</span></li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-7"/></svg><span>Одноразові рукавички</span></li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-7"/></svg><span>Стерилізація інструментів після кожної клієнтки</span></li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-7"/></svg><span>Одноразові пилочки та баффи</span></li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-7"/></svg><span>Сертифіковані продукти</span></li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-7"/></svg><span>Вентиляція та чисте, спокійне приміщення</span></li></ul>
+</div>
+</div>
+</section>
+
+<!-- O NAS -->
+<section id="onas" style="position:relative;overflow:hidden;background:#FFF3E8">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#F5F9FC"/></g></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="72" height="90" viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="2.5" style="right:3%;top:90px;color:#004AAD;opacity:.2"><use href="#d-bubbles"></use></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="100" height="120" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="right:2%;bottom:30px;color:#004AAD;opacity:.14"><use href="#d-coral"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+<div style="position:relative;overflow:hidden;flex:1 1 380px;min-width:0;height:460px;border-radius:28px;background:linear-gradient(160deg,#DCEBF5 0%,#BFD8EA 100%);color:#004AAD">
+<svg class="decor ph-x sway" aria-hidden="true" width="110" height="132" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="left:8%;bottom:30px;opacity:.3"><use href="#d-coral"></use></svg>
+<svg class="decor drift" aria-hidden="true" width="260" height="201" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="left:50%;top:22%;margin-left:-100px;opacity:.5"><use href="#d-shell"></use></svg>
+<svg class="decor ph-x spin" aria-hidden="true" width="80" height="80" viewBox="0 0 100 100" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="right:8%;top:10%;opacity:.3"><use href="#d-star"></use></svg>
+<svg class="decor" aria-hidden="true" width="90" height="57" viewBox="0 0 70 44" fill="currentColor" fill-opacity=".28" stroke="currentColor" stroke-width="2" style="right:10%;bottom:70px;opacity:.5"><use href="#d-pearls"></use></svg>
+<svg class="decor" aria-hidden="true" width="100%" height="40" viewBox="0 0 400 40" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="left:0;bottom:0;opacity:.35"><g class="wl1"><path vector-effect="non-scaling-stroke" d="M-100 15Q-75 -3 -50 15T0 15T50 15T100 15T150 15T200 15T250 15T300 15T350 15T400 15T450 15T500 15"/></g><g class="wl2"><path vector-effect="non-scaling-stroke" d="M-100 25Q-75 43 -50 25T0 25T50 25T100 25T150 25T200 25T250 25T300 25T350 25T400 25T450 25T500 25"/></g></svg>
+</div>
+<div style="flex:1 1 440px;min-width:0">
+<p style="margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#D9692A">Про нас</p>
+<h2 style="margin:0 0 24px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Про Ocean Beauty</h2>
+<p style="margin:0 0 18px;font-size:17px">Ocean Beauty — невеликий камерний салон у варшавській Волі. Усе почалося з простої ідеї: створити місце, до якого повертаються не лише за гарними руками й ногами, а й по хвилину спокою.</p>
+<p style="margin:0;font-size:17px">Назва відсилає до моря і до того, з чим воно асоціюється: спокій, легкість і відчуття, що час тече повільніше. Саме таку атмосферу ми хочемо дарувати щодня.</p>
+</div>
+</div>
+</section>
+
+<!-- ZESPOL -->
+<section style="position:relative;overflow:hidden;background:#FFEBDC">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFF3E8"/></g></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="110" height="132" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="right:3%;top:90px;color:#004AAD;opacity:.16"><use href="#d-coral"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="64" height="80" viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="2.5" style="left:16%;top:120px;color:#004AAD;opacity:.2"><use href="#d-bubbles"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px">
+<div style="max-width:560px;margin:0 auto 48px;text-align:center">
+<h2 style="margin:0 0 16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Знайомтеся з нашою командою</h2>
+<p style="margin:0;font-size:17px">За кожним результатом стоять люди з пристрастю та досвідом.</p>
+</div>
+<div class="team" style="display:flex;flex-wrap:wrap;gap:24px">
+<div class="card" style="flex:1 1 280px;min-width:0">
+<div class="tph"><div class="tin"><img src="../img/irina.jpg" alt="Ira" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div></div>
+<h3 style="margin:0 0 4px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:#004AAD">Ira</h3>
+<p style="margin:0;font-size:15px;color:#1F3550">Топ-стиліст · 8 років досвіду</p>
+</div>
+<div class="card" style="flex:1 1 280px;min-width:0">
+<div class="tph"><div class="tin"><img src="../img/ira.jpg" alt="Irina" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%"></div></div>
+<h3 style="margin:0 0 4px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:#004AAD">Irina</h3>
+<p style="margin:0;font-size:15px;color:#1F3550">Стиліст · 7 років досвіду</p>
+</div>
+<div class="card" style="flex:1 1 280px;min-width:0">
+<div class="tph"><div class="tin"><img src="../img/karina.jpg" alt="Karina" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%"></div></div>
+<h3 style="margin:0 0 4px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:#004AAD">Karina</h3>
+<p style="margin:0;font-size:15px;color:#1F3550">Топ-стиліст · 13 років досвіду</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- KURSY -->
+<section id="kursy" style="position:relative;overflow:hidden;background:#004AAD;color:#FFFFFF">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFEBDC"/></g></svg>
+<svg class="decor drift" aria-hidden="true" width="320" height="248" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="right:-30px;top:60px;color:#BFD8EA;opacity:.35"><use href="#d-shell"></use></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="120" height="144" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="left:1%;bottom:20px;color:#BFD8EA;opacity:.22"><use href="#d-coral"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="64" height="80" viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="2.5" style="right:6%;bottom:60px;color:#BFD8EA;opacity:.3"><use href="#d-bubbles"></use></svg>
+<svg class="decor" aria-hidden="true" width="100%" height="44" viewBox="0 0 400 40" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="left:0;bottom:0;color:#BFD8EA;opacity:.25"><g class="wl1"><path vector-effect="non-scaling-stroke" d="M-100 15Q-75 -3 -50 15T0 15T50 15T100 15T150 15T200 15T250 15T300 15T350 15T400 15T450 15T500 15"/></g><g class="wl2"><path vector-effect="non-scaling-stroke" d="M-100 25Q-75 43 -50 25T0 25T50 25T100 25T150 25T200 25T250 25T300 25T350 25T400 25T450 25T500 25"/></g></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px">
+<div style="max-width:620px;margin-bottom:56px">
+<p style="margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#BFD8EA">Курси</p>
+<h2 style="margin:0 0 20px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#FFFFFF">Курси манікюру та педикюру</h2>
+<p style="margin:0;font-size:17px;color:#DCEBF5">Навчаємо з нуля та підвищуємо кваліфікацію. Практичні заняття в малих групах, на професійних матеріалах, з досвідченими інструкторами.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div class="card" style="flex:1 1 320px;min-width:0;background:#F5F9FC;color:#1F3550;border-radius:24px;padding:36px;box-sizing:border-box">
+<h3 style="margin:0 0 12px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;color:#004AAD">Курс з нуля</h3>
+<p style="margin:0 0 24px;font-size:15px">Для тих, хто починає з нуля. Ви дізнаєтесь про анатомію нігтя, підготовку нігтьової пластини та основи гібридного манікюру, а все відпрацюєте на моделях.</p>
+<p style="display:flex;align-items:center;gap:10px;margin:0 0 4px;font-size:15px;color:#3A5470"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>5 днів · 40 годин занять</p>
+<p style="display:flex;align-items:center;gap:10px;margin:0 0 24px;font-size:15px;color:#3A5470"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>2 800 zł · до 4 осіб</p>
+<a href="https://wa.me/48577418424?text=%D0%94%D0%BE%D0%B1%D1%80%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%D0%BD%D0%B0%20%C2%AB%D0%9A%D1%83%D1%80%D1%81%20%D0%B7%20%D0%BD%D1%83%D0%BB%D1%8F%C2%BB." target="_blank" rel="noopener" style="color:#004AAD;font-weight:600;text-decoration:none">Записатися на курс →</a>
+</div>
+<div class="card" style="flex:1 1 320px;min-width:0;background:#F5F9FC;color:#1F3550;border-radius:24px;padding:36px;box-sizing:border-box">
+<h3 style="margin:0 0 12px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;color:#004AAD">Курс підвищення кваліфікації</h3>
+<p style="margin:0 0 24px;font-size:15px">Для майстринь, які хочуть підвищити кваліфікацію. Нарощування гелем, конструкційний френч, омбре та декор на практиці, з корекцією техніки від інструкторки.</p>
+<p style="display:flex;align-items:center;gap:10px;margin:0 0 4px;font-size:15px;color:#3A5470"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 дні · 24 години занять</p>
+<p style="display:flex;align-items:center;gap:10px;margin:0 0 24px;font-size:15px;color:#3A5470"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>1 900 zł · до 3 осіб</p>
+<a href="https://wa.me/48577418424?text=%D0%94%D0%BE%D0%B1%D1%80%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%D0%BD%D0%B0%20%C2%AB%D0%9A%D1%83%D1%80%D1%81%20%D0%BF%D1%96%D0%B4%D0%B2%D0%B8%D1%89%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%BA%D0%B2%D0%B0%D0%BB%D1%96%D1%84%D1%96%D0%BA%D0%B0%D1%86%D1%96%D1%97%C2%BB." target="_blank" rel="noopener" style="color:#004AAD;font-weight:600;text-decoration:none">Записатися на курс →</a>
+</div>
+<div class="card" style="flex:1 1 320px;min-width:0;background:#F5F9FC;color:#1F3550;border-radius:24px;padding:36px;box-sizing:border-box">
+<h3 style="margin:0 0 12px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;color:#004AAD">Індивідуальне навчання</h3>
+<p style="margin:0 0 24px;font-size:15px">Програма під ваші потреби. Ви обираєте тему, а інструкторка працює лише з вами в зручний для вас час.</p>
+<p style="display:flex;align-items:center;gap:10px;margin:0 0 4px;font-size:15px;color:#3A5470"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>від 1 до 5 днів, узгоджуємо разом</p>
+<p style="display:flex;align-items:center;gap:10px;margin:0 0 24px;font-size:15px;color:#3A5470"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>від 700 zł за день</p>
+<a href="https://wa.me/48577418424?text=%D0%94%D0%BE%D0%B1%D1%80%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%D0%BD%D0%B0%20%C2%AB%D0%86%D0%BD%D0%B4%D0%B8%D0%B2%D1%96%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%20%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BD%D0%BD%D1%8F%C2%BB." target="_blank" rel="noopener" style="color:#004AAD;font-weight:600;text-decoration:none">Записатися на курс →</a>
+</div>
+</div>
+<p style="margin:32px 0 0;font-size:14px;color:#BFD8EA;display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-3 5 3-1.5-7.5"/></svg>Після курсу ви отримаєте сертифікат про закінчення.</p>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="position:relative;overflow:hidden;background:#F5F9FC">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#004AAD"/></g></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="130" height="156" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="left:3%;top:30%;color:#004AAD;opacity:.16"><use href="#d-coral"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="130" height="100" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="right:4%;top:140px;color:#004AAD;opacity:.16"><use href="#d-shell"></use></svg>
+<svg class="decor decor-edge sway" aria-hidden="true" width="64" height="160" viewBox="0 0 60 150" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" style="right:6%;bottom:60px;color:#004AAD;opacity:.16"><use href="#d-seaweed"></use></svg>
+<svg class="decor decor-edge spin" aria-hidden="true" width="90" height="90" viewBox="0 0 100 100" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="left:6%;bottom:70px;color:#FF914D;opacity:.16"><use href="#d-star"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:880px;margin:0 auto;padding:56px 24px 104px">
+<h2 style="margin:0 0 40px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#004AAD">Поширені запитання</h2>
+<div style="border-top:1px solid #BFD8EA">
+<div style="padding:24px 0;border-bottom:1px solid #BFD8EA"><h3 style="margin:0 0 8px;font-size:18px;font-weight:600;color:#004AAD">Як записатися?</h3><p style="margin:0;font-size:16px">Онлайн через систему запису, телефоном або повідомленням в Instagram.</p></div>
+<div style="padding:24px 0;border-bottom:1px solid #BFD8EA"><h3 style="margin:0 0 8px;font-size:18px;font-weight:600;color:#004AAD">Чи можна скасувати або перенести візит?</h3><p style="margin:0;font-size:16px">Так, просимо повідомити щонайменше за 24 години.</p></div>
+<div style="padding:24px 0;border-bottom:1px solid #BFD8EA"><h3 style="margin:0 0 8px;font-size:18px;font-weight:600;color:#004AAD">Як можна оплатити?</h3><p style="margin:0;font-size:16px">Платіжною карткою, BLIK або готівкою.</p></div>
+<div style="padding:24px 0;border-bottom:1px solid #BFD8EA"><h3 style="margin:0 0 8px;font-size:18px;font-weight:600;color:#004AAD">Чи обслуговуєте клієнтів англійською, українською або російською?</h3><p style="margin:0;font-size:16px">Так, у салоні ми спілкуємося польською, українською, англійською та російською.</p></div>
+<div style="padding:24px 0;border-bottom:1px solid #BFD8EA"><h3 style="margin:0 0 8px;font-size:18px;font-weight:600;color:#004AAD">Чи потрібно записуватися заздалегідь?</h3><p style="margin:0;font-size:16px">Радимо записуватися заздалегідь, але за можливості приймаємо й без запису.</p></div>
+</div>
+</div>
+</section>
+
+<!-- CTA + KONTAKT -->
+<section id="kontakt" style="position:relative;overflow:hidden;background:#004AAD;color:#FFFFFF">
+<svg class="wvs" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:44px;position:relative;z-index:1"><g class="wv2"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#FFFFFF" fill-opacity=".38" transform="translate(-360 8)"/></g><g class="wv1"><path d="M0 0H2880V30C2760 60 2640 60 2520 30C2400 0 2280 0 2160 30C2040 60 1920 60 1800 30C1680 0 1560 0 1440 30C1320 60 1200 60 1080 30C960 0 840 0 720 30C600 60 480 60 360 30C240 0 120 0 0 30Z" fill="#F5F9FC"/></g></svg>
+<svg class="decor decor-edge spin" aria-hidden="true" width="120" height="120" viewBox="0 0 100 100" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="left:30%;bottom:80px;color:#FF914D;opacity:.5"><use href="#d-star"></use></svg>
+<svg class="decor decor-edge drift" aria-hidden="true" width="200" height="155" viewBox="0 0 88 68" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="left:2%;bottom:30px;color:#BFD8EA;opacity:.25"><use href="#d-shell"></use></svg>
+<div class="reveal" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:72px 24px 104px;display:flex;flex-wrap:wrap;gap:56px">
+<div style="flex:1 1 400px;min-width:0">
+<h2 style="margin:0 0 16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;line-height:1.08;color:#FFFFFF">Хочете хвилинку для себе?</h2>
+<p style="margin:0 0 32px;font-size:17px;color:#DCEBF5;max-width:460px">Забронюйте час онлайн або зателефонуйте. Будемо раді вас бачити.</p>
+<div class="cta2" style="display:flex;flex-wrap:wrap;gap:12px"><a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="btn btn-light" style="display:inline-block;background:#FFFFFF;color:#004AAD;text-decoration:none;font-size:16px;font-weight:600;padding:16px 32px;border-radius:999px">Записатися</a><a href="https://wa.me/48577418424?text=%D0%94%D0%BE%D0%B1%D1%80%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D1%83%D1%80%D1%81." target="_blank" rel="noopener" class="btn btn-ow" style="display:inline-block;background:transparent;color:#FFFFFF;text-decoration:none;font-size:16px;font-weight:600;padding:14px 30px;border-radius:999px;border:2px solid #FFFFFF">Записатися на курс</a></div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
+<a href="tel:+48577418424" class="pill pill-w"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span>Подзвонити</span></a>
+<a href="https://t.me/ira_vavryniuk" target="_blank" rel="noopener" class="pill pill-w"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14"/><path d="M21 3l-7 18-4-7-7-4z"/></svg><span>Telegram</span></a>
+<a href="https://wa.me/48577418424" target="_blank" rel="noopener" class="pill pill-w"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.7 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg><span>WhatsApp</span></a>
+<a href="https://www.google.com/maps/dir/?api=1&amp;destination=52.2249441,20.9426204" target="_blank" rel="noopener" class="pill pill-w"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Прокласти маршрут</span></a>
+</div>
+</div>
+<div style="flex:1 1 400px;min-width:0">
+<div style="margin-bottom:28px"><p style="margin:0 0 8px;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:#BFD8EA;display:flex;align-items:center;gap:8px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Адреса</p><p style="margin:0;font-size:17px">ul. Jana Kazimierza 32 B<br>01-248 Warszawa, Wola</p></div>
+<div style="margin-bottom:28px"><p style="margin:0 0 8px;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:#BFD8EA;display:flex;align-items:center;gap:8px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Години роботи</p><dl class="hrs"><dt>Пн–Сб</dt><dd>10:00–21:00</dd><dt>Неділя</dt><dd>10:00–20:00</dd></dl></div>
+<div style="margin-bottom:28px"><p style="margin:0 0 8px;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:#BFD8EA;display:flex;align-items:center;gap:8px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FF914D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Контакти</p><p style="margin:0;font-size:17px"><a href="tel:+48577418424" style="color:#FFFFFF;text-decoration:none">+48 577 418 424</a><br><a href="https://www.instagram.com/ocean.beauty.wola/" style="color:#FFFFFF">@ocean.beauty.wola</a></p></div>
+<iframe title="Мапа: Ocean Beauty, ul. Jana Kazimierza 32 B, Варшава" src="https://www.google.com/maps?q=Ocean+Beauty+Wola&amp;ll=52.2249441,20.9426204&amp;hl=uk&amp;z=18&amp;output=embed" width="100%" height="300" style="display:block;border:0;border-radius:20px;background:#0D3270" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+<p style="margin:12px 0 0;font-size:14px"><a href="https://www.google.com/maps/place/Ocean+Beauty+Wola/@52.2249449,20.9419767,19z/data=!4m6!3m5!1s0x471ecbd7c0f3c653:0xc3ba838d96211950!8m2!3d52.2249441!4d20.9426204!16s%2Fg%2F11stb35kmd" style="color:#FFFFFF;font-weight:600" target="_blank" rel="noopener">Відкрити в Google Maps →</a></p>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#02357F;color:#BFD8EA">
+<div style="max-width:1200px;margin:0 auto;padding:36px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:14px">
+<div style="display:flex;align-items:center;gap:12px">
+<img src="../img/mark-white.svg" alt="" style="height:46px;width:auto;display:block"><img src="../img/wordmark-white.svg" alt="Ocean Beauty — Nail World" style="height:34px;width:auto;display:block"><span>© 2026 Ocean Beauty. Усі права захищено.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 24px">
+<a href="#" style="color:#DCEBF5">Політика конфіденційності</a>
+<a href="#" style="color:#DCEBF5">Політика cookies</a>
+</div>
+</div>
+</footer>
+
+<a href="https://booksy.com/pl-pl/178984_ocean-beauty-manicure-pedicure-warszawa-wola_paznokcie_3_warszawa" class="fab">Записатися</a>
+</div>
+
+<script>
+(function(){
+var fab=document.querySelector('.fab'),k=document.getElementById('kontakt'),f=document.querySelector('footer');
+if(!fab||!k||!('IntersectionObserver' in window))return;
+var vis=new Set();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?vis.add(e.target):vis.delete(e.target)});fab.classList.toggle('off',vis.size>0)},{threshold:0.05});
+io.observe(k);if(f)io.observe(f);
+})();
+</script>
+<script>
+(function(){
+var hd=document.querySelector('header'),nav=document.querySelector('.hd-nav'),lgs=document.querySelectorAll('.hd-right a[hreflang]');
+if(!hd||!nav||!lgs.length)return;
+var code={pl:'PL',uk:'UA',en:'EN',ru:'RU'},name={pl:'Polski',uk:'Українська',en:'English',ru:'Русский'};
+var cur=(document.documentElement.lang||'pl').slice(0,2);
+var T={pl:['Język','Menu'],uk:['Мова','Меню'],en:['Language','Menu'],ru:['Язык','Меню']}[cur]||['Język','Menu'];
+var chev='<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4.5l4 4 4-4"/></svg>';
+var mh=document.createElement('div');mh.className='mh';
+mh.innerHTML='<button type="button" class="bt lg" aria-expanded="false" aria-haspopup="true" aria-label="'+T[0]+'"><span>'+(code[cur]||'PL')+'</span>'+chev+'</button><button type="button" class="bt bm" aria-expanded="false" aria-label="'+T[1]+'"><span class="bg"><i></i><i></i><i></i></span></button>';
+var pop=document.createElement('div');pop.className='lpop';
+[].forEach.call(lgs,function(a){var l=a.getAttribute('lang').slice(0,2),x=document.createElement('a');x.href=a.getAttribute('href');x.lang=a.lang;x.hreflang=a.hreflang;x.innerHTML='<b>'+(code[l]||l)+'</b>'+(name[l]||l);if(a.getAttribute('aria-current'))x.setAttribute('aria-current','true');pop.appendChild(x)});
+mh.appendChild(pop);
+var panel=document.createElement('div');panel.className='mpanel';panel.setAttribute('aria-label',T[1]);
+[].forEach.call(nav.querySelectorAll('a'),function(a){var x=document.createElement('a');x.href=a.getAttribute('href');x.textContent=a.textContent;panel.appendChild(x)});
+var act=document.createElement('div');act.className='mp-act';
+var bk=document.querySelector('.hd-right .btn');
+if(bk){var m1=document.createElement('a');m1.href=bk.getAttribute('href');m1.className='mpb main';m1.textContent=bk.textContent;act.appendChild(m1)}
+[].slice.call(document.querySelectorAll('#kontakt .pill-w')).slice(0,3).forEach(function(a){var x=document.createElement('a');x.href=a.getAttribute('href');x.className='mpb';if(a.target){x.target=a.target;x.rel='noopener'}x.innerHTML=a.innerHTML;act.appendChild(x)});
+panel.appendChild(act);
+hd.querySelector('.hd').appendChild(mh);hd.appendChild(panel);
+var bl=mh.querySelector('.lg'),bm=mh.querySelector('.bm');
+function setL(on){pop.classList.toggle('on',on);bl.setAttribute('aria-expanded',on)}
+function setM(on){panel.classList.toggle('on',on);bm.setAttribute('aria-expanded',on)}
+bl.onclick=function(e){e.stopPropagation();var on=!pop.classList.contains('on');setM(false);setL(on)};
+bm.onclick=function(e){e.stopPropagation();var on=!panel.classList.contains('on');setL(false);setM(on)};
+panel.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))setM(false)});
+document.addEventListener('click',function(e){if(!pop.contains(e.target)){setL(false)}if(!panel.contains(e.target)){setM(false)}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){setL(false);setM(false)}});
+window.addEventListener('scroll',function(){if(panel.classList.contains('on')||pop.classList.contains('on')){if(hd.classList.contains('hide')){setL(false);setM(false)}}},{passive:true});
+window.addEventListener('resize',function(){if(innerWidth>960){setL(false);setM(false)}});
+})();
+</script>
+<script>
+(function(){
+var bar=document.createElement('div');bar.className='prog';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+var hd=document.querySelector('header'),ly=window.pageYOffset,tick=false;
+function upd(){var y=window.pageYOffset,m=document.documentElement.scrollHeight-window.innerHeight;
+bar.style.transform='scaleX('+(m>0?Math.min(1,Math.max(0,y/m)):0)+')';
+if(hd){var h=hd.offsetHeight;if(y>h&&y>ly+4)hd.classList.add('hide');else if(y<ly-4||y<=h)hd.classList.remove('hide');}
+ly=y;tick=false}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
+window.addEventListener('resize',upd);upd();
+document.addEventListener('focusin',function(e){if(hd&&hd.contains(e.target))hd.classList.remove('hide')});
+var rev=document.querySelector('.rev');
+if(rev){var cards=[].slice.call(rev.children),dots=document.createElement('div');dots.className='dots';
+var lab={pl:'Opinia',uk:'Відгук',en:'Review',ru:'Отзыв'}[(document.documentElement.lang||'pl').slice(0,2)]||'Opinia';
+cards.forEach(function(c,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label',lab+' '+(k+1));b.onclick=function(){rev.scrollTo({left:c.offsetLeft-rev.offsetLeft-(rev.clientWidth-c.clientWidth)/2,behavior:'smooth'})};dots.appendChild(b)});
+rev.parentNode.insertBefore(dots,rev.nextSibling);
+var db=[].slice.call(dots.children);
+function sync(){dots.classList.toggle('on',rev.scrollWidth>rev.clientWidth+4);var mid=rev.scrollLeft+rev.clientWidth/2,best=0,bd=1e9;
+cards.forEach(function(c,k){var d=Math.abs(c.offsetLeft-rev.offsetLeft+c.clientWidth/2-mid);if(d<bd){bd=d;best=k}});
+if(rev.scrollLeft+rev.clientWidth>=rev.scrollWidth-4)best=cards.length-1;if(rev.scrollLeft<=2)best=0;
+db.forEach(function(x,k){x.classList.toggle('cur',k===best)})}
+rev.addEventListener('scroll',function(){requestAnimationFrame(sync)},{passive:true});window.addEventListener('resize',sync);sync();}
+})();
+</script>
+<script>
+(function(){
+var L={pl:['Zamknij','Poprzednie','Następne'],uk:['Закрити','Попереднє','Наступне'],en:['Close','Previous','Next'],ru:['Закрыть','Предыдущее','Следующее']};
+var lg=(document.documentElement.lang||'pl').slice(0,2),T=L[lg]||L.pl;
+var tiles=[].slice.call(document.querySelectorAll('#galeria .tile'));
+if(!tiles.length)return;
+var lb=document.createElement('div');lb.className='lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');
+lb.innerHTML='<button class="x" type="button" aria-label="'+T[0]+'">&times;</button><button class="pv" type="button" aria-label="'+T[1]+'">&#8249;</button><img alt=""><button class="nx" type="button" aria-label="'+T[2]+'">&#8250;</button><div class="ct"></div>';
+document.body.appendChild(lb);
+var im=lb.querySelector('img'),ct=lb.querySelector('.ct'),i=0,last=null;
+function show(n){i=(n+tiles.length)%tiles.length;var s=tiles[i].querySelector('img');im.src=s.currentSrc||s.src;im.alt=s.alt;ct.textContent=(i+1)+' / '+tiles.length}
+function open(n){last=document.activeElement;show(n);lb.classList.add('on');document.documentElement.style.overflow='hidden';lb.querySelector('.x').focus()}
+function close(){lb.classList.remove('on');document.documentElement.style.overflow='';if(last&&last.focus)last.focus()}
+tiles.forEach(function(t,k){t.tabIndex=0;t.setAttribute('role','button');t.addEventListener('click',function(){open(k)});t.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(k)}})});
+lb.querySelector('.x').onclick=close;lb.querySelector('.pv').onclick=function(){show(i-1)};lb.querySelector('.nx').onclick=function(){show(i+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)});
+var x0=null,y0=0;
+lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+lb.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))show(dx<0?i+1:i-1);else if(dy>90&&Math.abs(dy)>Math.abs(dx))close()},{passive:true});
+})();
+</script>
+<script>
+(function(){ var el=document.querySelector('.hero-blob'); if(!el)return;
+function go(){ el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop'); }
+el.addEventListener('click',go);
+el.addEventListener('animationend',function(e){ if(e.animationName==='pop')el.classList.remove('pop'); });
+})();
+</script>
+<script>
+(function(){ var bs=[].slice.call(document.querySelectorAll('.hb img')); var src=[].slice.call(document.querySelectorAll('#galeria .tile img')); if(bs.length<2||src.length<3)return;
+var list=src.map(function(i){return {s:i.getAttribute('src'),a:i.getAttribute('alt')||''}}); list.forEach(function(o){var p=new Image();p.src=o.s});
+bs.forEach(function(im){im.style.transition='opacity 1.2s ease'});
+var idx=[0,Math.floor(list.length/2)]; bs.forEach(function(im,k){var c=0;list.forEach(function(o,j){if(im.getAttribute('src')===o.s)idx[k]=j})});
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+function step(k){ var im=bs[k]; idx[k]=(idx[k]+1)%list.length; if(idx[k]===idx[1-k])idx[k]=(idx[k]+1)%list.length; var o=list[idx[k]]; im.style.opacity=0; setTimeout(function(){im.src=o.s;im.alt=o.a;im.style.opacity=1},1250); }
+setTimeout(function(){step(0);setInterval(function(){step(0)},11000)},3000);
+setTimeout(function(){step(1);setInterval(function(){step(1)},11000)},8500);
+})();
+</script>
+<script>
+(function(){ var ids=['manicure','pedicure','galeria','onas','kursy','kontakt']; var secs=ids.map(function(i){return document.getElementById(i)});
+if(secs.some(function(x){return !x}))return;
+var links=[].slice.call(document.querySelectorAll('.navlink,.mpanel a[href^="#"]')); var cur=null,tick=false;
+function upd(){tick=false; var y=window.innerHeight*0.38,act=null; secs.forEach(function(s,k){if(s.getBoundingClientRect().top<=y)act=ids[k]});
+if(window.innerHeight+window.pageYOffset>=document.documentElement.scrollHeight-4)act='kontakt';
+if(act===cur)return; cur=act; links.forEach(function(a){var on=a.getAttribute('href')==='#'+act; if(on)a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current')}) }
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true}); window.addEventListener('resize',upd); upd();
+})();
+</script>
+<script>
+(function(){ var hd=document.querySelector('header'); if(!hd)return; function t(){hd.classList.toggle('at-top',window.pageYOffset<12)} t(); window.addEventListener('scroll',t,{passive:true}); })();
+</script>
+</body>
+</html>
