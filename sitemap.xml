@@ -28,6 +28,34 @@
 <xhtml:link rel="alternate" hreflang="ru" href="https://oceanbeauty.pl/ru/"/>
 <xhtml:link rel="alternate" hreflang="x-default" href="https://oceanbeauty.pl/"/>
 </url>
+<url><loc>https://oceanbeauty.pl/kursy/</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="https://oceanbeauty.pl/kursy/"/>
+<xhtml:link rel="alternate" hreflang="uk" href="https://oceanbeauty.pl/ua/kursy/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://oceanbeauty.pl/en/kursy/"/>
+<xhtml:link rel="alternate" hreflang="ru" href="https://oceanbeauty.pl/ru/kursy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://oceanbeauty.pl/kursy/"/>
+</url>
+<url><loc>https://oceanbeauty.pl/ua/kursy/</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="https://oceanbeauty.pl/kursy/"/>
+<xhtml:link rel="alternate" hreflang="uk" href="https://oceanbeauty.pl/ua/kursy/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://oceanbeauty.pl/en/kursy/"/>
+<xhtml:link rel="alternate" hreflang="ru" href="https://oceanbeauty.pl/ru/kursy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://oceanbeauty.pl/kursy/"/>
+</url>
+<url><loc>https://oceanbeauty.pl/en/kursy/</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="https://oceanbeauty.pl/kursy/"/>
+<xhtml:link rel="alternate" hreflang="uk" href="https://oceanbeauty.pl/ua/kursy/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://oceanbeauty.pl/en/kursy/"/>
+<xhtml:link rel="alternate" hreflang="ru" href="https://oceanbeauty.pl/ru/kursy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://oceanbeauty.pl/kursy/"/>
+</url>
+<url><loc>https://oceanbeauty.pl/ru/kursy/</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="https://oceanbeauty.pl/kursy/"/>
+<xhtml:link rel="alternate" hreflang="uk" href="https://oceanbeauty.pl/ua/kursy/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://oceanbeauty.pl/en/kursy/"/>
+<xhtml:link rel="alternate" hreflang="ru" href="https://oceanbeauty.pl/ru/kursy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://oceanbeauty.pl/kursy/"/>
+</url>
 <url><loc>https://oceanbeauty.pl/polityka-prywatnosci/</loc>
 <xhtml:link rel="alternate" hreflang="pl" href="https://oceanbeauty.pl/polityka-prywatnosci/"/>
 <xhtml:link rel="alternate" hreflang="uk" href="https://oceanbeauty.pl/ua/polityka-prywatnosci/"/>
